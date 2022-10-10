@@ -63,7 +63,8 @@ export function passProductToCart(props) {
       return { message: "" };
     }
   } else if (!inStock) {
-    return { message: "This product out ot stock" };
+    window.scrollTo(0, 0);
+    return { message: "This product out ot stock"  };
   } else if (!checkOptions) {
     return { message: "you didn't select options" };
   }

@@ -95,6 +95,7 @@ export class ProductDetails extends PureComponent {
                 {message && <p>{`we can't order because ${message}`}</p>}
 
                 <ProductInfo
+              
                   attributes={attributes}
                   brand={brand}
                   name={name}

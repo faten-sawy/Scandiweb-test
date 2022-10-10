@@ -21,9 +21,7 @@ export class CartOverlay extends PureComponent {
     this.testRef = React.createRef();
     this.handleClickOutside = this.handleClickOutside.bind(this);
   }
-  /* state = {
-    quantities: 0,
-  }; */
+  
   componentDidMount() {
     const { products } = this.props;
     calcQuantity(products).then((res) => this.setState({ quantities: res }));

@@ -29,7 +29,6 @@ export class ImagesList extends PureComponent {
             src={gallery[this.state.imageIndex]}
             alt="product banner"
           />
-          {!inStock && <p>Out Of stock</p>}
         </div>
       </div>
     );
@@ -38,7 +37,6 @@ export class ImagesList extends PureComponent {
 const Image = styled.img`
   width: 100%;
   height: 100%;
-  opacity: ${({ inStock }) => !inStock && "0.3"};
 `;
 
 export default ImagesList;
