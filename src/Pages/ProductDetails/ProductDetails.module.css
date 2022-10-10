@@ -1,0 +1,129 @@
+/* .layout {
+  width: 100%;
+} */
+.overlayLayout {
+  position: absolute;
+  width: 100%;
+  top: -12vh;
+  min-height: 100%;
+  height: auto;
+  background-color: #39374838;
+  z-index: 2;
+  padding: 0;
+  margin-top: 6rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+.semiContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.info > p {
+  color: red;
+  font-family: "Raleway";
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.orderBtn {
+  height: 43px;
+  width: 97%;
+  position: relative;
+  border-radius: 0px;
+  background: #5ece7b;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: #5ece7b;
+  font-family: "Raleway";
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+.outBtn {
+  height: 43px;
+  width: 45%;
+  position: relative;
+  border-radius: 0px;
+  background: red;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: red;
+  font-family: "Raleway";
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+.description {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.description > div > ul {
+  padding: 1rem;
+}
+@media only screen and (min-width: 769px) {
+  .semiContainer {
+    width: 100%;
+  }
+  .orderBtn {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 577px) {
+  .semiContainer {
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  .info {
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    margin-left: clamp(1rem, 2%, 2rem);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .semiContainer {
+    width: 90%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .info {
+    margin-left: 3%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .semiContainer {
+    width: 100%;
+  }
+}

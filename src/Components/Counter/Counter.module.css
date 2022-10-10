@@ -1,0 +1,81 @@
+.counter > button {
+  height: 45px;
+  width: 45px;
+  border-radius: 0px;
+  border: 1px solid #1d1f22;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 300;
+  position: relative;
+}
+.counter > button:hover {
+  background-color: #1d1f22;
+  color: white;
+}
+.counter > button:first-of-type {
+  top: -3rem;
+}
+.counter > button:last-of-type {
+  bottom: -3rem;
+}
+.counter > p {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.smallCounter > button {
+  height: 24px;
+  width: 24px;
+  font-size: 15px;
+  border-radius: 0px;
+  border: 1px solid #1d1f22;
+  background-color: white;
+  font-weight: 300;
+  position: relative;
+}
+.smallCounter > button:hover {
+  background-color: #1d1f22;
+  color: white;
+}
+.smallCounter > button:first-of-type {
+  top: -3rem;
+}
+.smallCounter > button:last-of-type {
+  bottom: -3rem;
+}
+.cartCounter > button {
+  height: 24px;
+  width: 24px;
+  font-size: 15px;
+  border-radius: 0px;
+  border: 1px solid #1d1f22;
+  background-color: white;
+  font-weight: 300;
+  position: relative;
+}
+.cartCounter > button:hover {
+  background-color: #1d1f22;
+  color: white;
+}
+.cartCounter > button:first-of-type {
+  top: -3rem;
+}
+.cartCounter > button:last-of-type {
+  bottom: -3rem;
+}
+
+@media only screen and (max-width: 446px) {
+  .cartCounter > button:first-of-type {
+    top: clamp(-1rem, 30px, -3rem);
+  }
+  .cartCounter > button:last-of-type {
+    bottom: clamp(-1rem, 30px, -3rem);
+  }
+  .cartCounter {
+    margin-left: 1rem;
+  }
+}

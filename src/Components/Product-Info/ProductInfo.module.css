@@ -1,0 +1,111 @@
+.container > h1 {
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1d1f22;
+}
+.container > h2 {
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1d1f22;
+}
+.smallContainer > h1 {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1d1f22;
+}
+.smallContainer > h2 {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1d1f22;
+}
+.cartInfoContainer > h1 {
+  font-family: "Raleway";
+}
+.cartInfoContainer > h2 {
+  font-family: "Raleway";
+}
+
+.label {
+  font-family: "Roboto" /* "Condensed" */;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 18px;
+  color: #1d1f22;
+  text-transform: uppercase;
+}
+.productPrice > .price {
+  font-family: "Raleway";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1d1f22;
+  height: 46px;
+  margin-bottom: 0;
+}
+.reverseCont > .productPrice > .price {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.reverseCont {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.reverseCont > .productPrice {
+  color: red;
+}
+@media only screen and (max-width: 680px) {
+  .cartInfoContainer > h1 {
+    font-size: clamp(14px, 4vw, 30px);
+  }
+  .cartInfoContainer > h2 {
+    font-size: clamp(14px, 4vw, 30px);
+  }
+}
+@media only screen and (max-width: 460px) {
+  .smallContainer > h2 {
+    font-size: 15px;
+  }
+  .smallContainer > h1 {
+    font-size: 15px;
+  }
+  .reverseCont > .productPrice > .price {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .container > h1 {
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  .container > h2 {
+    font-size: clamp(10px, 4vw, 30px);
+  }
+}
+@media only screen and (max-width: 280px) {
+  .container > h2 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,79 @@
+.price > div {
+  display: flex;
+}
+.price > h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #1d1f22;
+}
+.price > h2 > span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #1d1f22;
+}
+.price > div > p {
+  padding-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cart {
+  justify-content: left;
+}
+
+.overlay {
+  justify-content: space-between;
+}
+.overlay > p:first-of-type {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+
+  color: #1d1f22;
+}
+.overlay > p:nth-of-type(2) {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #1d1f22;
+}
+.cart > p:first-of-type {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  text-align: right;
+
+  color: #1d1f22;
+}
+.cart > p:nth-of-type(2) {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #1d1f22;
+}

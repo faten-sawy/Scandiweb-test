@@ -1,0 +1,117 @@
+.container {
+  background-color: white;
+  z-index: 0;
+  /*  width: 405px; */
+  /* width: 100%; */
+  /*  padding: 0px 16px 32px 16px; */
+}
+.container > img {
+  /*  object-fit: contain; */
+  padding-top: 1.2rem;
+}
+.semiContainer {
+  padding: 0px 16px 32px 16px;
+  overflow-y: hidden;
+  position: absolute;
+  right: -10%;
+  background: white;
+  width: 400px;
+}
+
+.semiContainer > p {
+  font-weight: "Raleway";
+  font-size: 16px;
+  font-weight: 700;
+}
+.semiContainer > div:nth-of-type(1) {
+  max-height: 600px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.test {
+  background-color: #1d1f22;
+  color: white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  position: relative;
+  right: 6px;
+  top: -1rem;
+  font-family: "Raleway";
+  display: inline-block;
+  font-size: 1rem;
+}
+.container > p > span {
+  font-weight: "Raleway";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.checkBtn {
+  height: 52px;
+  width: 140px;
+  position: relative;
+  border-radius: 0px;
+  background: #5ece7b;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: #5ece7b;
+  font-family: "Raleway";
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.bagBtn {
+  border: 1px solid #1d1f22;
+  height: 52px;
+  width: 140px;
+  position: relative;
+  border-radius: 0px;
+  background: white;
+  color: #1d1f22;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-right: 1rem;
+  font-family: "Raleway";
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 576px) {
+  .container > img {
+    height: 20px;
+    width: 20px;
+    padding-top: 1.2rem;
+  }
+  .semiContainer {
+    position: absolute;
+    background-color: white;
+    left: -6%;
+    width: 100%;
+  }
+  .bagBtn {
+    width: 115px;
+    font-size: 14px;
+  }
+  .checkBtn {
+    width: 115px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 292px) {
+  .test {
+    width: 18px;
+    height: 18px;
+    font-size: 0.8rem;
+    right: -1rem;
+    top: -2.5rem;
+  }
+}

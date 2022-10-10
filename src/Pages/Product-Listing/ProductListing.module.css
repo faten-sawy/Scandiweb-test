@@ -1,0 +1,63 @@
+.layout {
+  width: 100%;
+}
+.overlayLayout {
+  position: absolute;
+  width: 115.5%;
+  left: -10%;
+  min-height: 100%;
+  height: auto;
+  background-color: #39374838 /*  rgba(0, 0, 0, 0.8) */;
+  z-index: 2;
+  position: absolute;
+  padding: 0;
+  margin-top: 6rem;
+}
+
+.container {
+  width: 90%;
+  position: relative;
+  left: 5%;
+  height: auto;
+}
+.container > h2 {
+  font-family: "Raleway";
+  font-size: clamp(1rem, 13vw, 3rem);
+  font-weight: 400;
+  line-height: 67px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: capitalize;
+  position: relative;
+  left: 5%;
+}
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.products > div {
+  position: relative;
+  width: clamp(280px, 20vw, 800px);
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 98%;
+    position: relative;
+    left: 1%;
+    height: auto;
+  }
+  .products > div {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 622px) {
+  .products {
+    justify-content: center;
+  }
+  .products > div {
+    width: 80%;
+  }
+}
